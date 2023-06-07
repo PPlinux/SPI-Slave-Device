@@ -1,0 +1,6 @@
+yosys -qm ghdl -p 'ghdl -fsynopsys COMPARATOR_16BIT.vhd -e COMPARATOR_16BIT; write_verilog COMPARATOR_16BIT.v'
+yosys -qm ghdl -p 'ghdl -fsynopsys COUNTER_16BIT.vhd -e COUNTER_16BIT; write_verilog COUNTER_16BIT.v'
+yosys -qm ghdl -p 'ghdl -fsynopsys FREQCOUNT_CORE_V4.vhd --ieee=synopsys -e FREQCOUNT_CORE_V4; write_verilog FREQCOUNT_CORE_V4.v'
+yosys -qm ghdl -p 'ghdl -fsynopsys PWM_CORE_LAT_V17.vhd -e PWM_CORE_LAT_V17; write_verilog PWM_CORE_LAT_V17.v'
+yosys -qm ghdl -p 'ghdl -fsynopsys REGISTER_16BIT.vhd -e REGISTER_16BIT; write_verilog REGISTER_16BIT.v'
+yosys -qm ghdl -p 'ghdl -fsynopsys SPI_SLAVE_TOPDESIGN.vhd -e bionic_eye_spi_slave ; write_verilog SPI_SLAVE_TOPDESIGN.v'
